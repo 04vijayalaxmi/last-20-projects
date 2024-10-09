@@ -1,0 +1,129 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splash"></div>
+    <script>
+        var loader=document.getElementById("splash")
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+        })
+    </script>
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Page</title>
+
+</head>
+<body>
+    <div class="splash-container">
+        <h1 id="title">Welcome!</h1>
+        <p id="subtitle">This is a splash page.</p>
+        <button id="enter-btn">Enter</button>
+    </div>
+
+    
+</body>
+</html>
+
+
+
+
+<style>
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+#title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#enter-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#enter-btn:hover {
+    background-color: #3e8e41;
+}
+
+</style>
+
+<script>
+// Get elements
+const title = document.getElementById('title');
+const subtitle = document.getElementById('subtitle');
+const enterBtn = document.getElementById('enter-btn');
+
+// Add event listener to enter button
+enterBtn.addEventListener('click', () => {
+    // Hide splash container
+    document.querySelector('.splash-container').style.display = 'none';
+
+    // Show main content (replace with your own content)
+    const mainContent = document.createElement('div');
+    mainContent.innerHTML = '<h1>Main Content!</h1>';
+    document.body.appendChild(mainContent);
+});
+
+
+</script>
+
+<!--
+This code creates a simple splash page with:
+
+
+1. A title and subtitle.
+2. An enter button.
+3. A JavaScript event listener that hides the splash container and shows main content when the button is clicked.
+
+
+DOM Basics Used:
+
+
+1. document.getElementById() to select elements.
+2. document.querySelector() to select elements.
+3. addEventListener() to attach events.
+4. style.display to hide/show elements.
+5. createElement() and appendChild() to add new elements.
+
+
+Would you like to:
+
+
+1. Add animations to the splash page.
+2. Create a countdown timer.
+3. Implement a login system.
+4. Something else?
+
+
+Let me know!-->
